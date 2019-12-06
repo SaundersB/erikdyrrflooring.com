@@ -1,11 +1,9 @@
 <template>
-  <div class="home">
+  <div>
     <carousel :autoplay="true">
-      <div v-for="image in images" v-bind:key="image.name">
-        <slide>
-          <img :src="resolve_img_url(image.name)" />
+        <slide v-for="image in images" v-bind:key="image.name">
+          <img style="height: auto; width: auto; max-width: 100%;" :src="resolve_img_url(image.name)" />
         </slide>
-      </div>
     </carousel>
   </div>
 </template>
@@ -40,10 +38,10 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      window.addEventListener('resize', () => {
-        this.windowWidth = window.innerWidth
+      window.addEventListener("resize", () => {
+        this.windowWidth = window.innerWidth;
       });
-    })
+    });
   },
   methods: {
     resolve_img_url: function(path) {
