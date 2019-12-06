@@ -1,9 +1,11 @@
 <template>
   <div>
     <carousel :autoplay="true">
-        <slide v-for="image in images" v-bind:key="image.name">
-          <img style="height: auto; width: auto; max-width: 100%;" :src="resolve_img_url(image.name)" />
-        </slide>
+      <slide v-for="image in images" v-bind:key="image.name">
+        <div class="container">
+          <img :src="resolve_img_url(image.name)" />
+        </div>
+      </slide>
     </carousel>
   </div>
 </template>
@@ -16,32 +18,23 @@ export default {
   data() {
     return {
       images: [
-        { name: "carpet_one.jpg"},
-        { name: "carpet_two.jpg"},
-        { name: "carpet_three.jpg"},
-        { name: "carpet_four.jpg"},
-        { name: "tile_one.jpg"},
-        { name: "tile_two.jpg"},
-        { name: "tile_three.jpg"},
-        { name: "tile_four.jpg"},
-        { name: "tile_five.jpg"},
-        { name: "tile_six.jpg"},
-        { name: "tile_seven.jpg"},
-
-
+        { name: "carpet_one.jpg" },
+        { name: "carpet_two.jpg" },
+        { name: "carpet_three.jpg" },
+        { name: "carpet_four.jpg" },
+        { name: "tile_one.jpg" },
+        { name: "tile_two.jpg" },
+        { name: "tile_three.jpg" },
+        { name: "tile_four.jpg" },
+        { name: "tile_five.jpg" },
+        { name: "tile_six.jpg" },
+        { name: "tile_seven.jpg" }
       ]
     };
   },
   components: {
     Carousel,
     Slide
-  },
-  mounted() {
-    this.$nextTick(() => {
-      window.addEventListener("resize", () => {
-        this.windowWidth = window.innerWidth;
-      });
-    });
   },
   methods: {
     resolve_img_url: function(path) {
@@ -51,3 +44,19 @@ export default {
   }
 };
 </script>
+<style scoped>
+.rotate {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  margin-top: 88px;
+}
+.container {
+  margin: 0 auto;
+}
+.container img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+</style>
