@@ -30,7 +30,6 @@ export default {
         { name: "tile_four.png" },
         { name: "tile_five.png" },
         { name: "tile_six.png" },
-        { name: "tile_seven.png" },
         { name: "tile_eight.png" },
         { name: "tile_nine.png" },
         { name: "laminate_one.png" },
@@ -38,7 +37,6 @@ export default {
         { name: "laminate_three.png" },
         { name: "laminate_four.png" },
         { name: "laminate_five.png" },
-        { name: "laminate_six.png" },
       ]
     };
   },
