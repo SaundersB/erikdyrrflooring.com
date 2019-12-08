@@ -8,7 +8,23 @@
         <legend>Request a quote!</legend>
         <div>
           <label class="label" for="name">Name</label>
-          <input type="text" name="name" id="name" required="" placeholder="Jane Smith" v-model="name" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Jane Smith"
+            v-model="name"
+          />
+        </div>
+        <div>
+          <label class="label" for="phone">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="123-456-7890"
+            v-model="phone"
+          />
         </div>
         <div>
           <label class="label" for="email">Email</label>
@@ -17,7 +33,6 @@
             name="email"
             id="email"
             placeholder="jane.smith@gmail.com"
-            required=""
             :class="{ email, error: !email.valid }"
             v-model="email.value"
           />
@@ -29,7 +44,6 @@
             name="textarea"
             id="textarea"
             placeholder="I'm interested in having my floors replaced."
-            required=""
             v-model="message.text"
             :maxlength="message.maxlength"
           />
@@ -51,6 +65,7 @@ export default {
   data: function() {
     return {
       name: "",
+      phone: "",
       email: {
         value: "",
         valid: true
@@ -73,6 +88,49 @@ export default {
     submit: function() {
       this.submitted = true;
 
+      let data_js = {
+        access_token: "tt5vn96fldpkj4f31itsv43v"
+      };
+
+      let request = new XMLHttpRequest();
+      request.onreadystatechange = function() {
+        if (request.readyState === 4 && request.status === 200) {
+          // js_onSuccess();
+        } else if (request.readyState === 4) {
+          // js_onError(request.response);
+        }
+      };
+
+      function toParams(data_js) {
+        let form_data = [];
+        for (let key in data_js) {
+          form_data.push(
+            encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key])
+          );
+        }
+
+        return form_data.join("&");
+      }
+
+      data_js["text"] =
+        "Name: " +
+        this.name +
+        "Phone: " +
+        this.phone +
+        "\nResponse Email: " +
+        this.email.value +
+        " \nMessage: " +
+        this.message.text;
+      data_js["subject"] = "Contact Form Submission";
+      let params = toParams(data_js);
+
+      request.open("POST", "https://postmail.invotes.com/send", true);
+      request.setRequestHeader(
+        "Content-type",
+        "application/x-www-form-urlencoded"
+      );
+
+      request.send(params);
     },
     // validate by type and value
     validate: function(type, value) {
