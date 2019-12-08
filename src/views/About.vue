@@ -4,7 +4,7 @@
       <img
         class="h-48 lg:h-auto  lg:w-48 md:w-48 flex-none bg-cover rounded-t-none
         rounded-l text-center overflow-hidden"
-        src="../assets/img/tile_seven.png"
+        src="../assets/img/laminate_two.png"
         alt="Erik Dyrr laying tile for over 20 years"
       />
       <div
@@ -19,6 +19,12 @@
             Since 1972, Erik Dyrr has been providing flooring services in the
             High Desert region. From carpet, laminate, to tile we handle it all!
           </p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10 h-10 rounded-full mr-4" src="../assets/img/erik.png" alt="Avatar of Erik Dyrr">
+          <div class="text-sm">
+            <p class="text-gray-900 leading-none">Erik Dyrr</p>
+          </div>
         </div>
       </div>
     </div>
