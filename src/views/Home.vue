@@ -1,5 +1,12 @@
 <template>
   <div>
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">Erik Dyrr Flooring</div>
+      <p class="text-gray-700 text-base">
+        High Desert flooring installation and repair. Porcelain and Ceramic Tile. Carpet and Laminate Flooring.
+        Call 760-404-7532
+      </p>
+    </div>
     <carousel
       :autoplay="true"
       :perPageCustom="[
@@ -64,7 +71,7 @@ export default {
         { name: "laminate_four.png" },
         { name: "laminate_five.png" }
       ],
-      fireplaceImages: [{ name: "fireplace.png" }],
+      fireplaceImages: [{ name: "fireplace.png" }]
     };
   },
   components: {
@@ -108,7 +115,9 @@ export default {
   text-align: center;
   min-height: 100px;
 }
-
-.label {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 </style>
