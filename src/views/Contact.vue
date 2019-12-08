@@ -52,7 +52,12 @@
           >
         </div>
         <div>
-          <input type="submit" value="Submit" />
+          <input
+            class="text-white bg-blue-500
+            hover:border-transparent hover:text-white hover:bg-blue-300 mt-4 lg:mt-0 "
+            type="submit"
+            value="Submit"
+          />
         </div>
       </fieldset>
     </form>
@@ -390,26 +395,14 @@ header h1 {
 }
 .vue-form input[type="submit"] {
   border: none;
-  background: #2c3e50;
   border-radius: 0.25em;
   padding: 12px 20px;
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  appearance: none;
 }
-.no-touch .vue-form input[type="submit"]:hover {
-  background: #42a2e1;
-}
-.vue-form input[type="submit"]:focus {
-  outline: none;
-  background: #2b3e51;
-}
-.vue-form input[type="submit"]:active {
-  transform: scale(0.9);
-}
+
 .vue-form .error-message {
   height: 35px;
   margin: 0px;
