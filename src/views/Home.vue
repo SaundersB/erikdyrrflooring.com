@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">Erik Dyrr Flooring</div>
       <p class="text-gray-700 text-base m-2">
         High Desert flooring installation and repair.
       </p>
