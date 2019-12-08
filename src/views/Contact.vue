@@ -8,7 +8,7 @@
         <legend>Request a quote!</legend>
         <div>
           <label class="label" for="name">Name</label>
-          <input type="text" name="name" id="name" required="" v-model="name" />
+          <input type="text" name="name" id="name" required="" placeholder="Jane Smith" v-model="name" />
         </div>
         <div>
           <label class="label" for="email">Email</label>
@@ -16,6 +16,7 @@
             type="email"
             name="email"
             id="email"
+            placeholder="jane.smith@gmail.com"
             required=""
             :class="{ email, error: !email.valid }"
             v-model="email.value"
@@ -27,6 +28,7 @@
             class="message"
             name="textarea"
             id="textarea"
+            placeholder="I'm interested in having my floors replaced."
             required=""
             v-model="message.text"
             :maxlength="message.maxlength"
@@ -36,7 +38,7 @@
           >
         </div>
         <div>
-          <input type="submit" value="Send Form" />
+          <input type="submit" value="Submit" />
         </div>
       </fieldset>
     </form>
@@ -48,9 +50,9 @@ export default {
   name: "Contact",
   data: function() {
     return {
-      name: "John Doe",
+      name: "",
       email: {
-        value: "jo@hnd.oe",
+        value: "",
         valid: true
       },
       features: ["Reactivity", "Encapsulation", "Data Binding"],
@@ -60,7 +62,7 @@ export default {
         features: []
       },
       message: {
-        text: `Dear Mr. President,\n...`,
+        text: ``,
         maxlength: 255
       },
       submitted: false
