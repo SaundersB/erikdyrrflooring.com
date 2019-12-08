@@ -215,11 +215,10 @@ header h1 {
 
 .vue-form {
   font-size: 16px;
-  width: 500px;
+  max-width: 500px;
   padding: 15px 30px;
   border-radius: 4px;
   margin: 50px auto;
-  width: 500px;
   background-color: #fff;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
 }
