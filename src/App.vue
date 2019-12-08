@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav class="flex items-center justify-between flex-wrap bg-blue-500 p-6">
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-5">
         <span class="font-semibold text-xl tracking-tight">Erik Dyrr Flooring</span>
       </div>
       <div class="block lg:hidden">
@@ -24,6 +24,11 @@
       </div>
     </nav>
     <router-view />
+    <nav class="flex items-center justify-center  bg-blue-500 p-2">
+      <div>
+        &copy; {{ new Date().getFullYear() }}
+      </div>
+    </nav>
   </div>
 </template>
 

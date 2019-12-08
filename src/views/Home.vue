@@ -1,9 +1,32 @@
 <template>
   <div>
-    <carousel :autoplay="true" :perPageCustom="[[400, 1] ,[652, 2], [768, 2], [1024, 4]]">
-      <slide v-for="image in images" v-bind:key="image.name">
+    <carousel
+      :autoplay="true"
+      :perPageCustom="[
+        [400, 1],
+        [652, 2],
+        [768, 2],
+        [1024, 4]
+      ]"
+    >
+      <slide v-for="image in tileImages" v-bind:key="image.name">
         <span class="container">
-          <img :src="resolve_img_url(image.name)" alt=""/>
+          <img class="w-full" :src="resolve_img_url(image.name)" alt="" />
+        </span>
+      </slide>
+      <slide v-for="image in fireplaceImages" v-bind:key="image.name">
+        <span class="container">
+          <img class="w-full" :src="resolve_img_url(image.name)" alt="" />
+        </span>
+      </slide>
+      <slide v-for="image in carpetImages" v-bind:key="image.name">
+        <span class="container">
+          <img class="w-full" :src="resolve_img_url(image.name)" alt="" />
+        </span>
+      </slide>
+      <slide v-for="image in laminateImages" v-bind:key="image.name">
+        <span class="container">
+          <img class="w-full" :src="resolve_img_url(image.name)" alt="" />
         </span>
       </slide>
     </carousel>
@@ -17,13 +40,14 @@ export default {
   name: "home",
   data() {
     return {
-      images: [
+      carpetImages: [
         { name: "carpet_one.png" },
         { name: "carpet_two.png" },
         { name: "carpet_three.png" },
         { name: "carpet_four.png" },
-        { name: "carpet_five.png" },
-        { name: "fireplace.png" },
+        { name: "carpet_five.png" }
+      ],
+      tileImages: [
         { name: "tile_one.png" },
         { name: "tile_two.png" },
         { name: "tile_three.png" },
@@ -31,13 +55,16 @@ export default {
         { name: "tile_five.png" },
         { name: "tile_six.png" },
         { name: "tile_eight.png" },
-        { name: "tile_nine.png" },
+        { name: "tile_nine.png" }
+      ],
+      laminateImages: [
         { name: "laminate_one.png" },
         { name: "laminate_two.png" },
         { name: "laminate_three.png" },
         { name: "laminate_four.png" },
-        { name: "laminate_five.png" },
-      ]
+        { name: "laminate_five.png" }
+      ],
+      fireplaceImages: [{ name: "fireplace.png" }],
     };
   },
   components: {
@@ -83,6 +110,5 @@ export default {
 }
 
 .label {
-
 }
 </style>
