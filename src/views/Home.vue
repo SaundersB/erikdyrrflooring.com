@@ -2,10 +2,25 @@
   <div>
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">Erik Dyrr Flooring</div>
-      <p class="text-gray-700 text-base">
-        High Desert flooring installation and repair. Porcelain and Ceramic Tile. Carpet and Laminate Flooring.
-        Call 760-404-7532
+      <p class="text-gray-700 text-base m-2">
+        High Desert flooring installation and repair.
       </p>
+      <p class="text-gray-700 text-base m-2">
+        Porcelain and Ceramic Tile.
+      </p>
+      <p class="text-gray-700 text-base m-2">
+        Carpet and Laminate Flooring.
+      </p>
+      <div class="flex flex-row justify-center">
+        <p class="text-gray-700 text-base mr-1">
+          Call
+        </p>
+        <a class="text-blue-400 mr-1" href="tel:+17604049532">760-404-7532</a>
+        <p class="text-gray-700 text-base mr-1">
+          or email
+        </p>
+        <a class="text-blue-400 mr-1" href="mailto:erikdyrr@live.com">erikdyrr@live.com</a>
+      </div>
     </div>
     <carousel
       :autoplay="true"
