@@ -1,33 +1,41 @@
 <template>
   <div id="app">
-    <nav class="flex items-center justify-between flex-wrap bg-blue-500 p-6">
+    <nav
+      class="flex items-center w-auto flex-wrap bg-blue-500 p-6 justify-center sm:flex sm:w-auto"
+    >
       <div class="flex items-center flex-shrink-0 text-white mr-5">
-        <span class="font-semibold text-xl tracking-tight">Erik Dyrr Flooring</span>
+        <span class="font-semibold text-xl tracking-tight">
+          Erik Dyrr Flooring</span
+        >
       </div>
-      <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
-      </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
-          <div class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+      <div
+        class="w-full block flex-grow lg:flex lg:w-auto md:flex md:w-auto sm:flex sm:w-auto"
+      >
+        <div class="text-sm flex-grow ">
+          <div
+            class="block mt-4 lg:inline-block lg:mt-0 md:inline-block md:mt-0 text-white hover:teal-200 mr-4"
+          >
             <router-link to="/">Home</router-link>
           </div>
-          <div class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <div
+            class=" block mt-4 lg:inline-block lg:mt-0 md:inline-block md:mt-0 text-white hover:teal-200 mr-4"
+          >
             <router-link to="/about">About</router-link>
           </div>
         </div>
-        <div>
-          <router-link class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0" to="/contact">Contact</router-link>
-        </div>
+      </div>
+      <div class="w-auto mr-5">
+        <router-link
+          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white justify-end
+            border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0 sm:mt-0"
+          to="/contact"
+          >Contact</router-link
+        >
       </div>
     </nav>
     <router-view />
     <nav class="flex items-center justify-center  bg-blue-500 p-2">
-      <div>
-        &copy; {{ new Date().getFullYear() }}
-      </div>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
     </nav>
   </div>
 </template>
