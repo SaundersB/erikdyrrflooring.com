@@ -1,6 +1,6 @@
 <template>
   <div>
-    <carousel :autoplay="true" :perPageCustom="[[768, 3], [1024, 4]]">
+    <carousel :autoplay="true" :perPageCustom="[[400, 1] ,[652, 2], [768, 2], [1024, 4]]">
       <slide v-for="image in images" v-bind:key="image.name">
         <span class="container">
           <img :src="resolve_img_url(image.name)" alt=""/>
