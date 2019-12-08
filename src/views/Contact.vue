@@ -395,7 +395,6 @@ header h1 {
   padding: 12px 20px;
   color: #ffffff;
   font-weight: bold;
-  float: right;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
