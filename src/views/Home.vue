@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div class="h-screen overflow-auto">
     <div class="px-6 py-4">
       <p class="text-gray-700 text-base m-2">
         High Desert flooring installation and repair.
@@ -13,6 +13,7 @@
       <communication-card />
     </div>
     <carousel
+      class=""
       :autoplayTimeout="5000"
       :autoplay="true"
       :perPageCustom="[

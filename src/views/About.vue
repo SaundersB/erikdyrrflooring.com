@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen m-auto p-10">
+  <div class="h-screen m-auto p-10 overflow-auto">
     <div
       class="flex flex-row w-full justify-center lg:max-w-full lg:flex md:flex flex flex-wrap"
     >

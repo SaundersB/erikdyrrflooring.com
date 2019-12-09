@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div class="h-screen overflow-auto">
     <form class="vue-form" @submit.prevent="submit">
       <div class="error-message" v-if="!email.valid">
         <p v-show="!email.valid">Oh, please enter a valid email address.</p>
@@ -51,7 +51,7 @@
             >{{ message.text.length }} / {{ message.maxlength }}</span
           >
         </div>
-        <div>
+        <div class="w-full h-auto">
           <input
             class="text-white bg-blue-500
             hover:border-transparent hover:text-white hover:bg-blue-300 mt-4 lg:mt-0 "
@@ -61,7 +61,7 @@
         </div>
       </fieldset>
     </form>
-    <div>
+    <div class="p-5 m-5">
       Or your can contact us directly!
       <communication-card />
     </div>
