@@ -34,7 +34,7 @@
       </div>
     </nav>
     <router-view />
-    <nav class="flex items-center justify-center  bg-blue-500 p-2">
+    <nav class="flex items-center justify-center  bg-blue-500 p-2 text-white">
       <div>&copy; {{ new Date().getFullYear() }}</div>
     </nav>
   </div>
