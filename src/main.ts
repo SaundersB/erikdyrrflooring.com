@@ -12,6 +12,7 @@ Vue.use(VueMeta, {
   refreshOnceOnNavigation: true
 });
 
+// @ts-ignore
 new Vue({
   router,
   store,
