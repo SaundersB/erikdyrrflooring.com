@@ -13,6 +13,7 @@
       <communication-card />
     </div>
     <carousel
+      :autoplayTimeout="5000"
       :autoplay="true"
       :perPageCustom="[
         [400, 1],
