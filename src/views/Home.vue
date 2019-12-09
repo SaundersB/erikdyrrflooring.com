@@ -18,7 +18,9 @@
         <p class="text-gray-700 text-base mr-1">
           or
         </p>
-        <a class="text-blue-400 mr-1" href="mailto:erikdyrr@live.com">email us!</a>
+        <a class="text-blue-400 mr-1" href="mailto:erikdyrr@live.com"
+          >email us!</a
+        >
       </div>
     </div>
     <carousel
@@ -56,9 +58,95 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
+import * as constants from "@/core/constants";
 
 export default {
   name: "home",
+  metaInfo: {
+    title: "Erik Dyrr Flooring",
+    titleTemplate: "%s | Home",
+    htmlAttrs: {
+      lang: "en",
+      amp: true
+    },
+    link: [{ rel: "canonical", href: constants.WWW_WEBSITE_URL }],
+    meta: [
+      { "http-equiv": "Content-Type", content: "text/html; charset=utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "description", content: constants.SITE_DESCRIPTION },
+      // OpenGraph data (Most widely used)
+      { property: "og:title", content: "Home" },
+      { property: "og:site_name", content: constants.SITE_NAME },
+      // The list of types is available here: http://ogp.me/#types
+      { property: "og:type", content: "website" },
+      // Should the the same as your canonical link, see below.
+      {
+        property: "og:url",
+        content: constants.WWW_WEBSITE_URL + "/"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_one.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_two.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_three.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_four.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_five.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/tile_one.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/tile_two.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/tile_three.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/tile_four.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/tile_five.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/tile_six.png"
+      },
+      {
+        property: "og:image",
+        content: constants.WWW_WEBSITE_URL + "/tile_seven.png"
+      },
+
+      // Often the same as your meta description, but not always.
+      {
+        property: "og:description",
+        content: constants.SITE_DESCRIPTION
+      },
+      // Google / Schema.org markup:
+      { itemprop: "name", content: constants.SITE_NAME },
+      { itemprop: "description", content: constants.SITE_DESCRIPTION },
+      {
+        itemprop: "image",
+        content: constants.WWW_WEBSITE_URL + "/my-special-image.jpg"
+      }
+    ]
+  },
   data() {
     return {
       carpetImages: [
