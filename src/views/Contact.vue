@@ -69,6 +69,9 @@ import * as constants from "@/core/constants";
 
 export default {
   name: "Contact",
+  mounted() {
+    this.$ua.trackView("Contact");
+  },
   data: function() {
     return {
       name: "",
