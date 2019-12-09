@@ -24,6 +24,12 @@ const routes = [
     path: "/contact",
     name: "contact",
     component: Contact
+  },
+  {
+    path: "*",
+    redirect: {
+      name: "home"
+    },
   }
 ];
 
