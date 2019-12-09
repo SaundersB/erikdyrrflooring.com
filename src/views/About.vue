@@ -18,14 +18,19 @@
             Hills, and all other Greater Mojave cities!
           </p>
         </div>
-        <div class="flex items-center">
-          <img
-            class="w-10 h-10 rounded-full mr-4"
-            src="../assets/img/erik.png"
-            alt="Avatar of Erik Dyrr"
-          />
-          <div class="text-sm">
-            <p class="text-gray-900 leading-none">Erik Dyrr</p>
+        <div class="flex items-center justify-between">
+          <div class="flex flex-row items-center">
+            <img
+              class="w-10 h-10 rounded-full mr-4"
+              src="../assets/img/erik.png"
+              alt="Avatar of Erik Dyrr"
+            />
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Erik Dyrr</p>
+            </div>
+          </div>
+          <div class="p-3">
+            <communication-card />
           </div>
         </div>
       </div>
@@ -35,8 +40,10 @@
 
 <script>
 import * as constants from "../core/constants";
+import CommunicationCard from "../components/CommunicationCard";
 
 export default {
+  components: { CommunicationCard },
   metaInfo: {
     title: "Erik Dyrr Flooring",
     titleTemplate: "%s | About",

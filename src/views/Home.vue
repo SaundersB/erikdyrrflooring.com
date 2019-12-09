@@ -10,18 +10,7 @@
       <p class="text-gray-700 text-base m-2">
         Carpet and Laminate Flooring.
       </p>
-      <div class="flex flex-row justify-center">
-        <p class="text-gray-700 text-base mr-1">
-          Call
-        </p>
-        <a class="text-blue-400 mr-1" href="tel:+17604047532">760-404-7532</a>
-        <p class="text-gray-700 text-base mr-1">
-          or
-        </p>
-        <a class="text-blue-400 mr-1" href="mailto:erikdyrr@live.com"
-          >email us!</a
-        >
-      </div>
+      <communication-card />
     </div>
     <carousel
       :autoplay="true"
@@ -59,6 +48,7 @@
 <script>
 import { Carousel, Slide } from "vue-carousel";
 import * as constants from "@/core/constants";
+import CommunicationCard from "@/components/CommunicationCard";
 
 export default {
   name: "home",
@@ -172,6 +162,7 @@ export default {
     };
   },
   components: {
+    CommunicationCard,
     Carousel,
     Slide
   },
