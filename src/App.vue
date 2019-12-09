@@ -4,8 +4,8 @@
       class="flex items-center w-auto flex-wrap bg-blue-500 p-6 justify-center sm:flex sm:w-auto"
     >
       <div class="flex items-center flex-shrink-0 text-white mr-5">
-        <span class="font-semibold text-xl tracking-tight">
-          Erik Dyrr Flooring</span
+        <a href="/" class="font-semibold text-xl tracking-tight">
+          Erik Dyrr Flooring</a
         >
       </div>
       <div
