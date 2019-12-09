@@ -65,6 +65,8 @@
 </template>
 
 <script>
+import * as constants from "@/core/constants";
+
 export default {
   name: "Contact",
   data: function() {
@@ -87,6 +89,39 @@ export default {
       },
       submitted: false
     };
+  },
+  metaInfo: {
+    title: "Erik Dyrr Flooring",
+    titleTemplate: "%s | Contact",
+    htmlAttrs: {
+      lang: "en",
+      amp: true
+    },
+    link: [{ rel: "canonical", href: constants.WWW_WEBSITE_URL }],
+    meta: [
+      { "http-equiv": "Content-Type", content: "text/html; charset=utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "description", content: constants.SITE_DESCRIPTION },
+      // OpenGraph data (Most widely used)
+      { property: "og:title", content: "Contact" },
+      { property: "og:site_name", content: constants.SITE_NAME },
+      // The list of types is available here: http://ogp.me/#types
+      { property: "og:type", content: "website" },
+      // Should the the same as your canonical link, see below.
+      {
+        property: "og:url",
+        content: constants.WWW_WEBSITE_URL + "/contact"
+      },
+
+      // Often the same as your meta description, but not always.
+      {
+        property: "og:description",
+        content: constants.SITE_DESCRIPTION
+      },
+      // Google / Schema.org markup:
+      { itemprop: "name", content: constants.SITE_NAME },
+      { itemprop: "description", content: constants.SITE_DESCRIPTION }
+    ]
   },
   methods: {
     // submit form handler

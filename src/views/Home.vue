@@ -84,55 +84,6 @@ export default {
         property: "og:url",
         content: constants.WWW_WEBSITE_URL + "/"
       },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/carpet_one.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/carpet_two.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/carpet_three.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/carpet_four.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/carpet_five.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/tile_one.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/tile_two.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/tile_three.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/tile_four.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/tile_five.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/tile_six.png"
-      },
-      {
-        property: "og:image",
-        content: constants.WWW_WEBSITE_URL + "/tile_seven.png"
-      },
-
       // Often the same as your meta description, but not always.
       {
         property: "og:description",
@@ -142,8 +93,52 @@ export default {
       { itemprop: "name", content: constants.SITE_NAME },
       { itemprop: "description", content: constants.SITE_DESCRIPTION },
       {
-        itemprop: "image",
-        content: constants.WWW_WEBSITE_URL + "/my-special-image.jpg"
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_one.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_two.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_three.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_four.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/carpet_five.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/tile_one.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/tile_two.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/tile_three.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/tile_four.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/tile_five.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/tile_six.png"
+      },
+      {
+        property: "image",
+        content: constants.WWW_WEBSITE_URL + "/tile_seven.png"
       }
     ]
   },
