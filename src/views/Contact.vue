@@ -61,14 +61,20 @@
         </div>
       </fieldset>
     </form>
+    <div>
+      Or your can contact us directly!
+      <communication-card />
+    </div>
   </div>
 </template>
 
 <script>
 import * as constants from "@/core/constants";
+import CommunicationCard from "@/components/CommunicationCard";
 
 export default {
   name: "Contact",
+  components: { CommunicationCard },
   data: function() {
     return {
       name: "",

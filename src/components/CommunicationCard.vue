@@ -7,7 +7,11 @@
     <p class="text-gray-700 text-base mr-1">
       or
     </p>
-    <a class="text-blue-400 mr-1" href="mailto:erikdyrr@live.com">email us!</a>
+    <a
+      class="text-blue-400 mr-1"
+      href="mailto:erikdyrr@live.com?subject=Contact%20Inquiry"
+      >email us!</a
+    >
   </div>
 </template>
 
