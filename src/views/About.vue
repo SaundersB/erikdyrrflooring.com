@@ -1,15 +1,9 @@
 <template>
   <div class=" lg:h-auto m-auto p-10">
     <div class="flex flex-row w-full justify-center lg:max-w-full lg:flex md:flex flex flex-wrap">
-        <img
-                class="w-full lg:w-1/4 md:w-1/4 sm:w-1/3 bg-cover rounded-t-none
-        rounded-l text-center overflow-hidden"
-                src="../assets/img/laminate_two.png"
-                alt="Erik Dyrr laying tile for over 20 years"
-        />
       <div
-        class="w-1/2 border-r border-b border-l border-gray-400 lg:border-l-0 border-t border-gray-400 bg-white rounded-b
-        lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+        class="lg:w-1/2 md:w-1/2 sm:w-1/2 sm:h-auto border-r border-b border-l border-gray-400 border-l-0 border-t border-gray-400 bg-white rounded-b
+         rounded p-4 flex flex-col justify-between leading-normal"
       >
         <div class="mb-8">
           <div class="text-gray-900 font-bold text-xl mb-2">
