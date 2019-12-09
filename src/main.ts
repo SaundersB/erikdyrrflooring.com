@@ -4,6 +4,8 @@ import VueMeta from "vue-meta";
 import router from "./router";
 import store from "./store";
 import "@/assets/styles/tailwind.css";
+// @ts-ignore
+import VueAnalytics from "vue-analytics";
 
 Vue.config.productionTip = false;
 
@@ -18,3 +20,8 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
+
+Vue.use(VueAnalytics, {
+  id: "UA-53484838-7",
+  checkDuplicatedScript: true
+});

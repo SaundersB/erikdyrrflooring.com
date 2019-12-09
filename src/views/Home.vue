@@ -132,9 +132,6 @@ export default {
       }
     ]
   },
-  mounted() {
-    this.$ua.trackView("Home");
-  },
   data() {
     return {
       carpetImages: [

@@ -44,9 +44,6 @@ import CommunicationCard from "../components/CommunicationCard";
 
 export default {
   components: { CommunicationCard },
-  mounted() {
-    this.$ua.trackView("About");
-  },
   metaInfo: {
     title: "Erik Dyrr Flooring",
     titleTemplate: "%s | About",
