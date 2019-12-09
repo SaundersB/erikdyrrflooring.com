@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-screen">
     <form class="vue-form" @submit.prevent="submit">
       <div class="error-message" v-if="!email.valid">
         <p v-show="!email.valid">Oh, please enter a valid email address.</p>
