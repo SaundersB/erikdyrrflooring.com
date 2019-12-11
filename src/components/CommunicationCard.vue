@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row justify-center ">
+  <div class="flex flex-row justify-center items-center">
     <p class="text-gray-700 text-base mr-1">
       Call
     </p>

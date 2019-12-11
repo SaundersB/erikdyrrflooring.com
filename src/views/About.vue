@@ -17,6 +17,9 @@
             We've been servicing the Hesperia, Victorville, Apple Valley, Pinon
             Hills, and all other Greater Mojave cities!
           </p>
+          <div class="flex flex-row items-center justify-center mt-2">
+            <communication-card />
+          </div>
         </div>
         <div class="flex items-center justify-between">
           <div class="flex flex-row items-center">
@@ -28,9 +31,6 @@
             <div class="text-sm">
               <p class="text-gray-900 leading-none">Erik Dyrr</p>
             </div>
-          </div>
-          <div class="p-3">
-            <communication-card />
           </div>
         </div>
       </div>
